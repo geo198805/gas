@@ -1,3 +1,9 @@
+<html>
+<body>
+<br>
+<br>
+<br>
+<div align="center">
 <?php
 /**
  * Created with WebFormGenerator.eu
@@ -157,6 +163,7 @@ if (!mysqli_query($con,$sql))
 }
 echo "1 record added";
 
+
 mysqli_close($con);
 
     }
@@ -258,3 +265,10 @@ mysqli_close($con);
 
 
 ?>
+
+
+<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+</div>
+</body>
+
+</html>

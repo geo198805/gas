@@ -1,0 +1,77 @@
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="http://smtp.geesta.com/forms/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="http://smtp.geesta.com/forms/css/uniform.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://smtp.geesta.com/forms/js/jquery.tools.js"></script>
+    <script type="text/javascript" src="http://smtp.geesta.com/forms/js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="http://smtp.geesta.com/forms/1397270518/js/main.js"></script> 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+ 
+ 
+ <br><br><br>
+    <div style="padding:3px 2px;border-bottom:1px solid #ccc"align="center">Gas Form</div>  
+    <form id="ff" action="http://smtp.geesta.com/forms/process_form.php" method="post">
+ 
+<div id="field2-container" class="field f_100" align="center">
+               <label for="field2">
+                    Date
+               </label>
+               <input class="ttw-date date" id="field2" maxlength="524288" name="date"
+               required="" size="20" tabindex="0" title="">
+          </div>
+          
+          
+          <div id="field8-container" class="field f_100" align="center">
+               <label for="field8">
+                    Trip Milage
+               </label>
+               <input type="number" name="trip" id="field8" required="required">
+          </div>
+          
+          
+          <div id="field9-container" class="field f_100" align="center">
+               <label for="field9">
+                    Total Milage
+               </label>
+               <input type="number" name="total" id="field9" required="required">
+          </div>
+          
+          
+          <div id="field10-container" class="field f_100" align="center">
+               <label for="field10">
+                    Fuel Qty. In Gallons
+               </label>
+               <input type="number" name="fuel" id="field10" required="required">
+          </div>
+          
+          
+          <div id="field11-container" class="field f_100" align="center">
+               <label for="field11">
+                    Cost of Fuel
+               </label>
+               <input type="number" name="cost" id="field11" required="required">
+          </div>
+          
+          
+          <div id="field12-container" class="field f_100" align="center"> 
+               <label for="field12">
+                    MPG
+               </label>
+               <input type="number" name="mpg" id="field12" required="required">
+          </div>
+          
+          
+          <div id="form-submit" class="field f_100 clearfix submit" align="center">
+               <input type="submit" value="Submit">
+          </div>
+</form>
+<script type="text/javascript">
+$('#ff').form({  
+    success:function(data){  
+        $.messager.alert('Info', data, 'info');  
+    }  
+});
+</script>
