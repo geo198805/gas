@@ -2,67 +2,20 @@
 <title>Insert title here</title>
     <meta charset="utf-8">
     <title></title>
-    <link href="file:///Macintosh HD/Applications/MAMP/htdocs/1397270518/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="file:///Macintosh HD/Applications/MAMP/htdocs/1397270518/css/uniform.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="http://smtp.geesta.com/forms/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="http://smtp.geesta.com/forms/css/uniform.css" media="screen" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script type="text/javascript" src="file:///Macintosh HD/Applications/MAMP/htdocs/1397270518/js/jquery.tools.js"></script>
-    <script type="text/javascript" src="file:///Macintosh HD/Applications/MAMP/htdocs/1397270518/js/jquery.uniform.min.js"></script>
-    <script type="text/javascript" src="file:///Macintosh HD/Applications/MAMP/htdocs/1397270518/js/main.js"></script>
-<script type="text/javascript">
- 
-// Category Lists
- 
-var categories = new Array();
-categories['Travel_Coupons'] = new Array('Abhibus.com','RedBus.in','MakemyTrip.com','Travelyaari.com');
-categories['Electronics_Coupons'] = new Array('FlipKart.com','shopping.com','deals.in','shopxyz.in');
-categories['Fashion_Coupons'] = new Array('jabong.com','xyz.com','fashion.com');
-categories['Gift_Coupons'] = new Array('giftshop.in','gifts.in','sendgifts.com','freegifts.in');
- 
-// State lists
-var states = new Array();
- 
-states['Travel_Coupons'] = new Array('Alberta','British Columbia','Ontario');
-states['Electronics_Coupons'] = new Array('Baja California','Chihuahua','Jalisco');
-states['Gift_Coupons'] = new Array('California','Florida','New York');
- 
-function changeStates() {
-  cntrySel = document.getElementById('Category');
-  stateList = categories[cntrySel.value];
-  changeSelect('Website', stateList, stateList);  
-}
-function changeSelect(fieldID, newOptions, newValues) {
-  selectField = document.getElementById(fieldID);
-  selectField.options.length = 0;
-  for (i=0; i<newOptions.length; i++) {
-    selectField.options[selectField.length] = new Option(newOptions[i], newValues[i]);
-  }
-}
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
-    window.onload = func;
-  } else {
-    window.onload = function() {
-      if (oldonload) {
-        oldonload();
-      }
-      func();
-    }
-  }
-}
- 
-addLoadEvent(function() {
-  changeStates();
-});
-</script>
+    <script type="text/javascript" src="http://smtp.geesta.com/forms/js/jquery.tools.js"></script>
+    <script type="text/javascript" src="http://smtp.geesta.com/forms/js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="http://smtp.geesta.com/forms/1397270518/js/main.js"></script> 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
  
  
- 
-    <div style="padding:3px 2px;border-bottom:1px solid #ccc">Ajax Form</div>  
+ <br><br><br>
+    <div style="padding:3px 2px;border-bottom:1px solid #ccc"align="center">Gas Form</div>  
     <form id="ff" action="http://smtp.geesta.com/forms/process_form.php" method="post">
  
-<div id="field2-container" class="field f_100">
+<div id="field2-container" class="field f_100" align="center">
                <label for="field2">
                     Date
                </label>
@@ -71,7 +24,7 @@ addLoadEvent(function() {
           </div>
           
           
-          <div id="field8-container" class="field f_100">
+          <div id="field8-container" class="field f_100" align="center">
                <label for="field8">
                     Trip Milage
                </label>
@@ -79,7 +32,7 @@ addLoadEvent(function() {
           </div>
           
           
-          <div id="field9-container" class="field f_100">
+          <div id="field9-container" class="field f_100" align="center">
                <label for="field9">
                     Total Milage
                </label>
@@ -87,7 +40,7 @@ addLoadEvent(function() {
           </div>
           
           
-          <div id="field10-container" class="field f_100">
+          <div id="field10-container" class="field f_100" align="center">
                <label for="field10">
                     Fuel Qty. In Gallons
                </label>
@@ -95,7 +48,7 @@ addLoadEvent(function() {
           </div>
           
           
-          <div id="field11-container" class="field f_100">
+          <div id="field11-container" class="field f_100" align="center">
                <label for="field11">
                     Cost of Fuel
                </label>
@@ -103,7 +56,7 @@ addLoadEvent(function() {
           </div>
           
           
-          <div id="field12-container" class="field f_100">
+          <div id="field12-container" class="field f_100" align="center"> 
                <label for="field12">
                     MPG
                </label>
@@ -111,7 +64,7 @@ addLoadEvent(function() {
           </div>
           
           
-          <div id="form-submit" class="field f_100 clearfix submit">
+          <div id="form-submit" class="field f_100 clearfix submit" align="center">
                <input type="submit" value="Submit">
           </div>
 </form>
